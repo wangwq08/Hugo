@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jul 2019 11:45:39 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Tue, 02 Jul 2019 11:45:39 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>关于我 一个小白 爱读书 喜欢折腾 希望成为全栈工程师</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 19:26:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo博客搭建基本知识</title>
+      <link>http://localhost:1313/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 26 Jun 2019 19:26:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</guid>
+      <description>关于Hugo Hugo是由Go语言实现的静态网站生成器。简单、易用、高校、容易扩张、快速部署。 中文文档 其他工具 Hexo也是静态网站生成器，基本</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>http://localhost:1313/post/hello/</link>
+      <pubDate>Wed, 26 Jun 2019 19:17:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/hello/</guid>
+      <description>hello world Taody, the first time to use hugo. Talk is cheap, show me the code.</description>
+    </item>
+    
+    <item>
+      <title>Aether Features</title>
+      <link>http://localhost:1313/post/aether-features/</link>
+      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/aether-features/</guid>
+      <description>Hugo combined with the Aether theme turns easy to write markdown into powerful web pages. KaTeX, Highlight.js, and Hugo provides the ability to create mathmatical symobols, equations, highlighted code, tables, lists, and much more.
+For each feature below, the first line is the markdown and the second line is the result after Hugo, KaTeX, and Highlight.js process the markdown. You can find many more features in the Hugo documentation.</description>
+    </item>
+    
+    <item>
+      <title>AIX系统简介</title>
+      <link>http://localhost:1313/post/aix%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Tue, 08 May 2018 18:35:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/aix%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</guid>
+      <description>简介 AIX是Advanced Interactive executive的缩写, 中文名为高级交互执行。 1986年1月推出，是IBM发布的UNIX操作系统。最初，AI</description>
+    </item>
+    
+    <item>
+      <title>Aether: A Clean Theme for Hugo</title>
+      <link>http://localhost:1313/post/aether-theme/</link>
+      <pubDate>Wed, 02 May 2018 14:33:42 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/aether-theme/</guid>
+      <description>Today&amp;rsquo;s web is a frustrating mess of pop-ups, intrusive banners, and ads obstructing the content. I designed aether to be free of all these distractions and simply highlight the content. The result feels more like a native application than a website. Interactions are intuitive, content is the focus, and distractions are omitted.
+Aether is a Hugo theme for blogs that elevates good writing and photography. If you use Hugo for your blog, give aether a try.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>http://localhost:1313/post/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>http://localhost:1313/post/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://localhost:1313/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>http://localhost:1313/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+1 2 3  ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png   should become
+1 2 3 4  ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Jun 2019 19:26:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/categories/blog/</link>
+      <pubDate>Wed, 26 Jun 2019 19:26:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>http://localhost:1313/categories/features/</link>
+      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/categories/features/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AIX</title>
+      <link>http://localhost:1313/categories/aix/</link>
+      <pubDate>Tue, 08 May 2018 18:35:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/aix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://localhost:1313/categories/web/</link>
+      <pubDate>Wed, 02 May 2018 14:33:42 -0400</pubDate>
+      
+      <guid>http://localhost:1313/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>http://localhost:1313/categories/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>http://localhost:1313/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

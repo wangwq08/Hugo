@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIX on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/aix/</link>
+    <description>Recent content in AIX on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 May 2018 18:35:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/aix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AIX系统简介</title>
+      <link>http://localhost:1313/post/aix%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Tue, 08 May 2018 18:35:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/aix%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/</guid>
+      <description>简介 AIX是Advanced Interactive executive的缩写, 中文名为高级交互执行。 1986年1月推出，是IBM发布的UNIX操作系统。最初，AI</description>
+    </item>
+    
+  </channel>
+</rss>
