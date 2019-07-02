@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大数据 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 大数据 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 May 2018 15:18:11 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>保险业中的大数据</title>
+      <link>http://localhost:1313/post/%E4%BF%9D%E9%99%A9%E4%B8%9A%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Mon, 21 May 2018 15:18:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E4%BF%9D%E9%99%A9%E4%B8%9A%E4%B8%AD%E7%9A%84%E5%A4%A7%E6%95%B0%E6%8D%AE/</guid>
+      <description>背景 随着互联网技术的发展，出现了移动互联网、大数据、云计算、人工智能等新的科技浪潮。互联网+，万物互联成为新的发展趋势。保险本身属于资金和数</description>
+    </item>
+    
+  </channel>
+</rss>
