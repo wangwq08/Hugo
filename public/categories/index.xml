@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Features</title>
-      <link>http://localhost:1313/categories/features/</link>
-      <pubDate>Wed, 19 Dec 2018 10:35:35 -0500</pubDate>
-      
-      <guid>http://localhost:1313/categories/features/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>大数据</title>
       <link>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Mon, 21 May 2018 15:18:11 +0800</pubDate>
@@ -48,29 +39,11 @@
     </item>
     
     <item>
-      <title>Web</title>
-      <link>http://localhost:1313/categories/web/</link>
-      <pubDate>Wed, 02 May 2018 14:33:42 -0400</pubDate>
+      <title>中文</title>
+      <link>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
       
-      <guid>http://localhost:1313/categories/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>http://localhost:1313/categories/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>http://localhost:1313/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/categories/golang/</guid>
+      <guid>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</guid>
       <description></description>
     </item>
     
