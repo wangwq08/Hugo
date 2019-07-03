@@ -6,28 +6,10 @@
     <description>Recent content in Categories on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Jun 2019 19:26:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 18:35:08 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Blog</title>
-      <link>http://localhost:1313/categories/blog/</link>
-      <pubDate>Wed, 26 Jun 2019 19:26:00 +0800</pubDate>
-      
-      <guid>http://localhost:1313/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>大数据</title>
-      <link>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
-      <pubDate>Mon, 21 May 2018 15:18:11 +0800</pubDate>
-      
-      <guid>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>AIX</title>
@@ -39,11 +21,38 @@
     </item>
     
     <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/categories/blog/</link>
+      <pubDate>Wed, 26 Jun 2019 19:26:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/categories/hugo/</link>
+      <pubDate>Wed, 03 Jul 2019 00:44:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>中文</title>
       <link>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</link>
       <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
       
       <guid>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>大数据</title>
+      <link>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Mon, 21 May 2018 15:18:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</guid>
       <description></description>
     </item>
     

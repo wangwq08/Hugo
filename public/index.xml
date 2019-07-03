@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Different Pc Post Blog</title>
+      <link>http://localhost:1313/post/different-pc-post-blog/</link>
+      <pubDate>Wed, 03 Jul 2019 00:44:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/different-pc-post-blog/</guid>
+      <description>Background Sometimes,I need to use different computers to post blog.
+So, I wang to know how to implement it by hugo, It&amp;rsquo;s a little complex for hexo, a blog I used before.
+Solution  Create a repostirty to store gitname.github.io, the site files, in public Create a repostirty to store hugo config file.  How to do 1 2 3 4 5 6 7 8 9 10 11 12  hugo new post/different.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://localhost:1313/about/about/</link>
       <pubDate>Tue, 02 Jul 2019 11:45:39 +0800</pubDate>
