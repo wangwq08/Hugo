@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Word邮件合并功能</title>
+      <link>http://localhost:1313/post/word-excel-import/</link>
+      <pubDate>Fri, 05 Jul 2019 16:32:24 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/word-excel-import/</guid>
+      <description>功能简介 将Excel中的数据批量导入到word模板中的指定位置 举例说明 例如打印成绩单，每个人的成绩单模板一致，但是每个人的成绩不同，这时候就</description>
+    </item>
+    
+    <item>
       <title>Different Pc Post Blog</title>
       <link>http://localhost:1313/post/different-pc-post-blog/</link>
       <pubDate>Wed, 03 Jul 2019 00:44:46 +0800</pubDate>
