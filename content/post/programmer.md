@@ -1,12 +1,12 @@
 ---
-title: "Programmer"
+title: "一个合格的程序员"
 date: 2018-04-23T17:46:10+08:00
 draft: false
 categories: ["programmer"]
 tags: ["code,programmer,plan"]
 ---
 
-## 程序员每天应该该做的事
+## 程序员每天该做的事
 
 1、总结自己一天任务的完成情况 最好的方式是写工作日志，把自己今天完成了什么事情，遇见了什么问题都记录下来，日后翻看好处多多
 
