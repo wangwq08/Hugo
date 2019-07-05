@@ -75,11 +75,29 @@
     </item>
     
     <item>
-      <title>code,programmer,plan</title>
-      <link>http://localhost:1313/tags/codeprogrammerplan/</link>
+      <title>code</title>
+      <link>http://localhost:1313/tags/code/</link>
       <pubDate>Mon, 23 Apr 2018 17:46:10 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/codeprogrammerplan/</guid>
+      <guid>http://localhost:1313/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plan</title>
+      <link>http://localhost:1313/tags/plan/</link>
+      <pubDate>Mon, 23 Apr 2018 17:46:10 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/plan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmer</title>
+      <link>http://localhost:1313/tags/programmer/</link>
+      <pubDate>Mon, 23 Apr 2018 17:46:10 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/programmer/</guid>
       <description></description>
     </item>
     

@@ -3,7 +3,8 @@ title: "一个合格的程序员"
 date: 2018-04-23T17:46:10+08:00
 draft: false
 categories: ["programmer"]
-tags: ["code,programmer,plan"]
+tags: ["code","programmer","plan"]
+lastmod: 2019-07-05T17:46:10+08:00
 ---
 
 ## 程序员每天该做的事
