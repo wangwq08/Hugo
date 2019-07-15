@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jul 2019 17:59:45 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java基础知识</title>
+      <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 15 Jul 2019 17:59:45 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。因为类调用时需要实例化,开销比较大，比较消耗资源。所以当性能是最重要的考量因素的</description>
+    </item>
+    
+  </channel>
+</rss>
