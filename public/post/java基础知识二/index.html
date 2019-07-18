@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Java基础知识(二) - Jachin - Stay foolish and stay hungry</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jachin" /><meta name="description" content="1、构造器Constructor是否可以被override? 父类的私有属性和构造方法并不能被继承。所以Constructor也就不能被ove" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BA%8C/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Java基础知识(二)" />
+<meta property="og:description" content="1、构造器Constructor是否可以被override? 父类的私有属性和构造方法并不能被继承。所以Constructor也就不能被ove" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BA%8C/" />
+<meta property="article:published_time" content="2019-07-18T11:48:45&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-18T11:48:45&#43;08:00"/>
+
+<meta itemprop="name" content="Java基础知识(二)">
+<meta itemprop="description" content="1、构造器Constructor是否可以被override? 父类的私有属性和构造方法并不能被继承。所以Constructor也就不能被ove">
+
+
+<meta itemprop="datePublished" content="2019-07-18T11:48:45&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-18T11:48:45&#43;08:00" />
+<meta itemprop="wordCount" content="1652">
+
+
+
+<meta itemprop="keywords" content="Java," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java基础知识(二)"/>
+<meta name="twitter:description" content="1、构造器Constructor是否可以被override? 父类的私有属性和构造方法并不能被继承。所以Constructor也就不能被ove"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Jachin&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/about">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Jachin&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/about">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Java基础知识(二)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-18 </span>
+        <div class="post-category">
+            <a href="/categories/java/"> Java </a>
+            </div>
+          <span class="more-meta"> 1652 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-构造器constructor是否可以被override">1、构造器Constructor是否可以被override?</a></li>
+<li><a href="#2-重载和重写的区别">2、重载和重写的区别</a></li>
+<li><a href="#3-java面向对象编程三大特性-封装-继承-多态">3、Java面向对象编程三大特性：封装 继承 多态</a>
+<ul>
+<li><a href="#封装"><strong>封装</strong></a></li>
+<li><a href="#继承"><strong>继承</strong></a></li>
+<li><a href="#多态"><strong>多态</strong></a></li>
+</ul></li>
+<li><a href="#string-stringbuffer-stringbuilder的区别是什么-string为什么是不可变的">String/StringBuffer/StringBuilder的区别是什么？String为什么是不可变的？</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h2 id="1-构造器constructor是否可以被override">1、构造器Constructor是否可以被override?</h2>
+
+<p>父类的私有属性和构造方法并不能被继承。所以Constructor也就不能被override(重写)。</p>
+
+<p>但是可以被overload(重载)，所以你可以看到一个类中有多个构造函数的情况。</p>
+
+<h2 id="2-重载和重写的区别">2、重载和重写的区别</h2>
+
+<ul>
+<li><p>重载： 发生在一个类中，方法名必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，发生在编译时</p></li>
+
+<li><p>重写: 发生在父子类中，方法名、参数列表必须相同，返回值范围小于等于父类。抛出的异常范围小于等于父类，访问修饰范围大于等于父类。
+如果父类方法访问修饰符为private 则子类就不能重写该方法。</p></li>
+</ul>
+
+<h2 id="3-java面向对象编程三大特性-封装-继承-多态">3、Java面向对象编程三大特性：封装 继承 多态</h2>
+
+<h3 id="封装"><strong>封装</strong></h3>
+
+<p>封装把一个对象的属性私有化，同时提供一些可以被外界访问的属性的方法，如果属性不想被外界访问，我们大可不必提供方法给外界访问。</p>
+
+<p>但是如果一个类没有提供给外界访问的方法，那么这个类就没有什么意义了。</p>
+
+<h3 id="继承"><strong>继承</strong></h3>
+
+<p>继承是使用已存在的类的定义作为基础建立新类的技术，新类的定义可以增加新的数据或新的功能，也可以用父类的功能。</p>
+
+<p>但不能选择性地继承父类。通过使用继承可以非常方便地复用以前的代码。</p>
+
+<p><strong>关于继承需要记住三点</strong></p>
+
+<blockquote>
+<p>1、子类拥有父类对象所有的属性和方法（包括私有属性和私有方法）。但是父类中的私有属性和方法子类是无法访问，只是拥有</p>
+
+<p>2、子类可以拥有自己属性和方法，即子类可以对父类进行扩展</p>
+
+<p>3、子类可以用自己的方式实现父类的方法</p>
+</blockquote>
+
+<h3 id="多态"><strong>多态</strong></h3>
+
+<p>所谓多态就是指程序中定义的引用变量所指向的具体类型和通过改引用变量发出的方法调用在编程时不确定，而是在程序运行期间才确定，
+即一个引用变量到底会指向哪个类的实例对象，该引用变量发出的方法调用到底是哪个类中实现的方法，必须由程序运行期间才能确定。</p>
+
+<p>在Java中有两种形式可以实现多态：继承（多个子类对同一方法的重写）和接口（实现接口并覆盖接口中同一方法）</p>
+
+<h2 id="string-stringbuffer-stringbuilder的区别是什么-string为什么是不可变的">String/StringBuffer/StringBuilder的区别是什么？String为什么是不可变的？</h2>
+
+<p><strong>可变性</strong></p>
+
+<p>简单的来说，<code>String</code>类中使用<code>final</code>关键字修饰字符数组来保存字符串，<code>private final char value[]</code>,所以<code>String</code>对象是不可变的。而<code>StringBuilder</code>与<code>StringBuffer</code>都继承自<code>AbstractStringBuilder</code>类，在<code>AbstractStringBuilder</code>中也是使用字符数组保存字符串<code>char[]value</code>,但是没用用<code>final</code>关键字修饰，所以这两种对象都是可变的。</p>
+
+<p><code>StringBuilder</code>与<code>StringBuffer</code>的构造方法都是调用父类构造方法也就是<code>AbstractStringBuilder</code>实现的</p>
+
+<p><code>AbstractStringBuilder.java</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">AbstractStringBuilder</span> <span class="kd">implements</span> <span class="n">Appendable</span><span class="o">,</span> <span class="n">CharSequence</span> <span class="o">{</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">value</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">count</span><span class="o">;</span>
+    <span class="n">AbstractStringBuilder</span><span class="o">()</span> <span class="o">{</span>
+
+    <span class="o">}</span>
+    <span class="n">AbstractStringBuilder</span><span class="o">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">capacity</span><span class="o">]</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>线程安全性</strong></p>
+
+<p><code>String</code>中的对象是不可变的，也就可以理解为常量，线程安全。</p>
+
+<p><code>AbstractStringBuilder</code>是<code>StringBuilder</code>与<code>StringBuffer</code>的公共父类，定义了一些字符串的基本操作，如<code>expandCapacity</code>、<code>append</code>、<code>insert</code> 、<code>indexOf()</code>等公共方法。</p>
+
+<p><code>StringBuffer</code>对方法加了同步锁或者对调用的方法加了同步锁，所以线程是安全的</p>
+
+<p><code>StringBuilder</code>并没有对方法加同步锁，所以是非线程安全的。</p>
+
+<p><strong>性能</strong></p>
+
+<p>每次对<code>String</code>类型进行改变的时候，都会生成一个新的String对象，然后将指针指向新的String对象。</p>
+
+<p><code>StringBuffer</code>每次都会对<code>StringBuffer</code>对象本身进行操作，而不是生成新的对象并改变对象引用。</p>
+
+<p>相同情况下使用<code>StringBuilder</code>相比使用<code>StringBuffer</code>仅能获得10%-15%左右的性能提升，但却要冒多线程不安全的风险。</p>
+
+<p><strong>对于三者使用的总结</strong></p>
+
+<p>1、操作少量的数据：适用String</p>
+
+<p>2、单线程操作字符串缓冲区下操作大量数据：适用于StringBuilder</p>
+
+<p>3、多线程操作字符串缓冲区下操作大量数据：适用于StringBuffer</p>
+
+<hr />
+
+<p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md#8-%E5%AD%97%E7%AC%A6%E5%9E%8B%E5%B8%B8%E9%87%8F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB">参考资料</a></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Jachin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-07-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/java/">Java</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+            <span class="next-text nav-default">Java基础知识（一）</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="wangwq08/wangwq08.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:644813712@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangwq08/wangwq08.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jachin</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
