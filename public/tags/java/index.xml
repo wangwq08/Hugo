@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Java基础知识</title>
+      <title>Java基础知识（一）</title>
       <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Mon, 15 Jul 2019 17:59:45 +0800</pubDate>
       
       <guid>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
-      <description>面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。因为类调用时需要实例化,开销比较大，比较消耗资源。所以当性能是最重要的考量因素的</description>
+      <description>1 面向对象和面向过程的区别 面向过程 ：面向过程性能比面向对象高。因为类调用时需要实例化,开销比较大，比较消耗资源。所以当性能是最重要的考量因素</description>
     </item>
     
   </channel>
