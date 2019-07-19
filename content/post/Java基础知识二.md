@@ -4,6 +4,7 @@ date: 2019-07-18T11:48:45+08:00
 draft: false
 categories: ["Java"]
 tags: ["Java"]
+lastmod: 2019-07-19T11:48:45+08:00
 ---
 
 ## 1、构造器Constructor是否可以被override?
@@ -48,7 +49,7 @@ tags: ["Java"]
 
 在Java中有两种形式可以实现多态：继承（多个子类对同一方法的重写）和接口（实现接口并覆盖接口中同一方法）
 
-## String/StringBuffer/StringBuilder的区别是什么？String为什么是不可变的？
+## 4、String/StringBuffer/StringBuilder的区别是什么？String为什么是不可变的？
 
 **可变性**
 
@@ -96,6 +97,31 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
 
 3、多线程操作字符串缓冲区下操作大量数据：适用于StringBuffer
 
+## 5、自动装箱与拆箱
+
+* **装箱：** 将基本类型用它们对应的引用类型包装起来。
+* **拆箱：** 将包装类型转换为基本数据类型
+
+## 6、在一个静态方法内调用一个非静态成员为什么是非法的？
+
+由于静态方法不通过对象进行调用，因此在静态方法里，不能调用其他非静态变量，也不可以访问非静态变量成员。
+
+## 7、在Java中定义一个不做事且没有参数的构造方法的作用
+
+Java程序在执行子类的构造方法之前，如果没有用`super()`来调用父类特定的构造方法，则会调用父类中“没有参数的构造方法”。
+
+因此，如果父类中只定义了有参数的构造方法，而在子类的构造方法中又没有用`super()`来调用父类中特定的构造方法，则编译时会发生错误。
+因为Java程序在父类中找不到没有参数的构造方法可供执行。
+
+解决办法是在父类里面加上一个不做事且没有参数的构造方法。
+
+## 8、import java和javax 有什么区别？
+
+刚开始的时候，JavaAPI所必需的包是Java开头的包，javax当时只是扩展API包来使用。随着时间的推移，javax逐渐地扩展成为JavaAPI的组成部分。
+
+但是，将javax包移动到java包确实太麻烦了，最终会破坏一堆现有的代码。因此，最终决定javax包成为标准API的一部分。
+
+所以，实际上java和javax没有区别，都是一个名字。
 
 
 ---

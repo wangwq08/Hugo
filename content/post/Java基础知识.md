@@ -1,5 +1,5 @@
 ---
-title: "Java基础知识（一）"
+title: "Java基础知识(一)"
 date: 2019-07-15T17:59:45+08:00
 draft: false
 categories: ["Java"]
