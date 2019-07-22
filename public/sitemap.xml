@@ -3,7 +3,38 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-07-22T17:12:07+08:00</lastmod>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/windowsupdate/</loc>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/windowsupdate%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%A4%B1%E8%B4%A5/</loc>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2019-07-22T18:20:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,18 +55,6 @@
     <lastmod>2019-07-22T17:12:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-07-22T17:12:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-07-22T17:12:07+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
