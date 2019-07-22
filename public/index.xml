@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Java基础知识(五)</title>
+      <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BA%94/</link>
+      <pubDate>Mon, 22 Jul 2019 08:34:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%BA%94/</guid>
+      <description>为什么Java中只有值传递？ 按值调用（call by value）表示方法接收的是调用者提供的值，而按引用调用（call by reference）表示</description>
+    </item>
+    
+    <item>
       <title>Java基础知识(四)</title>
       <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9B/</link>
       <pubDate>Fri, 19 Jul 2019 14:30:59 +0800</pubDate>
@@ -73,7 +82,7 @@ Solution  Create a repostirty to store gitname.github.io, the site files, in pub
       <pubDate>Tue, 02 Jul 2019 11:45:39 +0800</pubDate>
       
       <guid>http://localhost:1313/about/about/</guid>
-      <description>关于我 一个小白 爱读书 喜欢折腾 希望成为全栈工程师</description>
+      <description>联系方式 手机： 15917919676 Email: wqwang0220@gmail.com 微信： 个人信息 Jachin/男/1995.02.20 本科/汕头大学计算机系计算机科学与技术专业/英语四级 技术博客：htt</description>
     </item>
     
     <item>
