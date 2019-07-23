@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Java基础知识(七) - Jachin - Stay foolish and stay hungry</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jachin" /><meta name="description" content="Java中的异常处理 Java异常类层次结构图 在Java中，所有的异常都有一个共同的祖先java.lang包中的Throwable类。 Thro" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%83/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Java基础知识(七)" />
+<meta property="og:description" content="Java中的异常处理 Java异常类层次结构图 在Java中，所有的异常都有一个共同的祖先java.lang包中的Throwable类。 Thro" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%83/" />
+<meta property="article:published_time" content="2019-07-23T09:44:20&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-23T09:44:20&#43;08:00"/>
+
+<meta itemprop="name" content="Java基础知识(七)">
+<meta itemprop="description" content="Java中的异常处理 Java异常类层次结构图 在Java中，所有的异常都有一个共同的祖先java.lang包中的Throwable类。 Thro">
+
+
+<meta itemprop="datePublished" content="2019-07-23T09:44:20&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-23T09:44:20&#43;08:00" />
+<meta itemprop="wordCount" content="1738">
+
+
+
+<meta itemprop="keywords" content="Java,异常,IO流," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java基础知识(七)"/>
+<meta name="twitter:description" content="Java中的异常处理 Java异常类层次结构图 在Java中，所有的异常都有一个共同的祖先java.lang包中的Throwable类。 Thro"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Jachin&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/about">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Jachin&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/about">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Java基础知识(七)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-23 </span>
+        <div class="post-category">
+            <a href="/categories/java/"> Java </a>
+            </div>
+          <span class="more-meta"> 1738 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#java中的异常处理">Java中的异常处理</a>
+<ul>
+<li><a href="#java异常类层次结构图">Java异常类层次结构图</a></li>
+<li><a href="#throwable类常用方法">Throwable类常用方法</a></li>
+<li><a href="#异常处理总结">异常处理总结</a></li>
+<li><a href="#以下4种特殊情况-finally块不会被执行">以下4种特殊情况，finally块不会被执行：</a></li>
+</ul></li>
+<li><a href="#java中io流分为几种-bio-nio-aio有什么区别">Java中IO流分为几种？BIO,NIO,AIO有什么区别？</a>
+<ul>
+<li><a href="#java种io流分为几种">Java种IO流分为几种？</a></li>
+<li><a href="#bio-nio-aio有什么区别">BIO,NIO,AIO有什么区别？</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h2 id="java中的异常处理">Java中的异常处理</h2>
+
+<h3 id="java异常类层次结构图">Java异常类层次结构图</h3>
+
+<p><img src="https://camo.githubusercontent.com/27aa104d93ba0738be0f3d2e7d5b096c1619d12d/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d322f457863657074696f6e2e706e67" alt="image1" /></p>
+
+<p>在Java中，所有的异常都有一个共同的祖先java.lang包中的<strong>Throwable类</strong>。</p>
+
+<p>Throwable：有两个重要的子类：<strong>Exception(异常)</strong>和<strong>Error(错误)</strong>，二者都是Java异常处理的重要子类，各自都包含大量子类。</p>
+
+<p><strong>Error(错误): 是程序无法处理的错误</strong>，表示运行应用程序中较严重问题。大多数错误与代码编写者执行的操作无关，而表示代码运行时JVM(Java虚拟机)出现的问题。
+例如，Java虚拟机运行错误(Virtual MachineError)，当JVM不再有继续执行操作所需的内存资源时，将出现OutOfMemoryError。这些异常发生时，Java虚拟机(JVM)一般
+会选择线程终止。</p>
+
+<p>这些错误表示故障发生于虚拟机自身、或者发生在虚拟机试图执行应用时，如Java虚拟机运行错误(Virtual MachineError)、类定义错误(NoClassDefFoundError)等，这些错误
+是不可查的，因为它们在应用程序的控制和处理能力之外，而且绝大多数是程序运行时不允许出现的状况。对于设计合理的应用程序来说，即使发生了错误，本质上也不应该试图去处理它所引起的异常
+状况。在Java中，错误通过Error的子类描述。</p>
+
+<p><strong>Exception(异常)：是程序本身可以处理的异常。</strong>Exception类有一个重要的子类RuntimeException。RuntimeException异常由Java虚拟机抛出。NullPointException(要访问的变量没有引用任何对象时，抛出该异常)、ArithmeticException(算术运算异常，一个整数除以0时，抛出该异常)和ArrayIndexOutOfBoundsException(下标越界异常)。</p>
+
+<p><strong>异常和错误的区别：异常能被程序本身可以处理，错误是无法处理</strong></p>
+
+<h3 id="throwable类常用方法">Throwable类常用方法</h3>
+
+<ul>
+<li><p>public string getMessage();返回异常发生时的详细信息</p></li>
+
+<li><p>public string toString();返回异常发生时的简要描述</p></li>
+
+<li><p>public string getLocallizedMessage();返回异常对象的本地化信息。使用Throwable的子类覆盖这个方法，可以声称本地化信息。如果子类没有覆盖该方法，则该方法返回的信息与getMessage()返回的记过相同</p></li>
+
+<li><p>public void printStackTrace();在控制台上打印Throwable对象封装的异常信息。</p></li>
+</ul>
+
+<h3 id="异常处理总结">异常处理总结</h3>
+
+<ul>
+<li><p><strong>try块：</strong>用于捕获异常。其后可以接零个或多个catch块，如果没有catch块，则必须跟一个finally块。</p></li>
+
+<li><p><strong>catch块：</strong>用于处理try捕获到的异常</p></li>
+
+<li><p><strong>finally块：</strong>无论是否捕获或处理异常，finally块里的语句都会被执行。当在try块或catch块中遇到return语句时，finally语句块将在方法返回之前被执行</p></li>
+</ul>
+
+<h3 id="以下4种特殊情况-finally块不会被执行">以下4种特殊情况，finally块不会被执行：</h3>
+
+<ol>
+<li><p>在finally语句块第一行发生了异常。因为在其他行，finally块还是会得到执行</p></li>
+
+<li><p>在前面的代码种用了System.exit(int)已退出了程序。exit是带参函数；若该语句在异常语句之后，finally会执行。</p></li>
+
+<li><p>程序所在的线程死亡</p></li>
+
+<li><p>关闭CPU</p></li>
+</ol>
+
+<p><strong>注意：</strong>当try语句和finally语句都有return语句时，在方法返回之前，finally语句的内容将被执行，并且finally语句的返回值将会覆盖原始的返回值。如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">f</span><span class="o">(</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">*</span> <span class="n">value</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">value</span> <span class="o">==</span> <span class="n">2</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>如果调用f(2)，返回值将是0，因为finally语句的返回值覆盖了try语句的返回值。</p>
+
+<h2 id="java中io流分为几种-bio-nio-aio有什么区别">Java中IO流分为几种？BIO,NIO,AIO有什么区别？</h2>
+
+<h3 id="java种io流分为几种">Java种IO流分为几种？</h3>
+
+<ul>
+<li><p>按照流的流向分，可以分为输入流和输出流</p></li>
+
+<li><p>按照操作单元划分，可以划分为字节流和字符流</p></li>
+
+<li><p>按照流的角色划分为节点流和处理流</p></li>
+</ul>
+
+<p>Java io流涉及40多个类，看上去乱，实际上有规则，并且彼此之间有紧密的联系。Java io流的40多个类都是从如下4个抽象类基类中派生出来</p>
+
+<ul>
+<li><p>InputStream/Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流</p></li>
+
+<li><p>OutputStream/Writer: 所有的输出流的基类，前者是字节输出流，后者是字符输出流</p></li>
+</ul>
+
+<p>按操作方式分类结构图</p>
+
+<p><img src="https://camo.githubusercontent.com/639ec442b39898de071c3e4fd098215fb48f11e9/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f494f2d2545362539332538442545342542442539432545362539362542392545352542432538462545352538382538362545372542312542422e706e67" alt="image3" /></p>
+
+<p>按操作对象分类结构图</p>
+
+<p><img src="https://camo.githubusercontent.com/4a44e49ab13eacac26cbb0e481db73d6d11181b7/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392d362f494f2d2545362539332538442545342542442539432545352541462542392545382542312541312545352538382538362545372542312542422e706e67" alt="image4" /></p>
+
+<h3 id="bio-nio-aio有什么区别">BIO,NIO,AIO有什么区别？</h3>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Jachin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-07-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/java/">Java</a>
+          <a href="/tags/%E5%BC%82%E5%B8%B8/">异常</a>
+          <a href="/tags/io%E6%B5%81/">IO流</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/windowsupdate%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%A4%B1%E8%B4%A5/">
+            <span class="next-text nav-default">WindowsUpdate自动更新失败</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="wangwq08/wangwq08.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:644813712@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangwq08/wangwq08.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jachin</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

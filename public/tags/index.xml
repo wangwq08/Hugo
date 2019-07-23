@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jul 2019 18:20:54 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 09:44:20 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>IO流</title>
+      <link>http://localhost:1313/tags/io%E6%B5%81/</link>
+      <pubDate>Tue, 23 Jul 2019 09:44:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/io%E6%B5%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/tags/java/</link>
+      <pubDate>Tue, 23 Jul 2019 09:44:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>异常</title>
+      <link>http://localhost:1313/tags/%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Tue, 23 Jul 2019 09:44:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/%E5%BC%82%E5%B8%B8/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>电脑知识</title>
@@ -17,15 +44,6 @@
       <pubDate>Mon, 22 Jul 2019 18:20:54 +0800</pubDate>
       
       <guid>http://localhost:1313/tags/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
-      <pubDate>Mon, 22 Jul 2019 17:12:07 +0800</pubDate>
-      
-      <guid>http://localhost:1313/tags/java/</guid>
       <description></description>
     </item>
     

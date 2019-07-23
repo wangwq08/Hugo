@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IO流 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/io%E6%B5%81/</link>
+    <description>Recent content in IO流 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Jul 2019 09:44:20 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/io%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java基础知识(七)</title>
+      <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%83/</link>
+      <pubDate>Tue, 23 Jul 2019 09:44:20 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%83/</guid>
+      <description>Java中的异常处理 Java异常类层次结构图 在Java中，所有的异常都有一个共同的祖先java.lang包中的Throwable类。 Thro</description>
+    </item>
+    
+  </channel>
+</rss>
