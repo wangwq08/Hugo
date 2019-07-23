@@ -3,7 +3,7 @@ title: "Java基础知识(四)"
 date: 2019-07-19T14:30:59+08:00
 draft: false
 categories: ["Java"]
-tags: ["Java"]
+tags: ["Java","hashcode"]
 ---
 
 ## hashCode 与 equals（**重要**）
