@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Java基础知识(八)</title>
+      <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%85%AB/</link>
+      <pubDate>Wed, 24 Jul 2019 14:27:57 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%85%AB/</guid>
+      <description>final static this super关键字总结 final关键字 final 关键字主要用在三个地方：变量、方法、类 对于一个final变量，如果是基本数据类型的变量，则其数值</description>
+    </item>
+    
+    <item>
       <title>Java基础知识(七)</title>
       <link>http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%83/</link>
       <pubDate>Tue, 23 Jul 2019 09:44:20 +0800</pubDate>
