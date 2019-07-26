@@ -43,15 +43,15 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%85%AB/" />
 <meta property="article:published_time" content="2019-07-24T14:27:57&#43;08:00"/>
-<meta property="article:modified_time" content="2019-07-24T14:27:57&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-26T14:27:57&#43;08:00"/>
 
 <meta itemprop="name" content="Java基础知识(八)">
 <meta itemprop="description" content="final static this super关键字总结 final关键字 final 关键字主要用在三个地方：变量、方法、类 对于一个final变量，如果是基本数据类型的变量，则其数值">
 
 
 <meta itemprop="datePublished" content="2019-07-24T14:27:57&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-24T14:27:57&#43;08:00" />
-<meta itemprop="wordCount" content="1076">
+<meta itemprop="dateModified" content="2019-07-26T14:27:57&#43;08:00" />
+<meta itemprop="wordCount" content="2387">
 
 
 
@@ -132,8 +132,8 @@
         <div class="post-category">
             <a href="/categories/java/"> Java </a>
             </div>
-          <span class="more-meta"> 1076 words </span>
-          <span class="more-meta"> 3 mins read </span>
+          <span class="more-meta"> 2387 words </span>
+          <span class="more-meta"> 5 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
@@ -151,12 +151,15 @@
 <li><a href="#static关键字">static关键字</a></li>
 <li><a href="#this关键字">this关键字</a></li>
 <li><a href="#super关键字">super关键字</a></li>
-<li><a href="#参考">参考</a></li>
 </ul></li>
 <li><a href="#static关键字详解">static关键字详解</a>
 <ul>
-<li><a href="#static关键字主要有以下四种使用场景">static关键字主要有以下四种使用场景</a></li>
-<li><a href="#补充内容">补充内容</a></li>
+<li><a href="#static关键字主要有以下四种使用场景">static关键字主要有以下四种使用场景</a>
+<ul>
+<li><a href="#修饰成员变量和成员方法-常用"><strong>修饰成员变量和成员方法（常用）</strong></a></li>
+<li><a href="#静态代码块"><strong>静态代码块</strong></a></li>
+<li><a href="#静态内部类"><strong>静态内部类</strong></a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -238,13 +241,207 @@
 
 <h3 id="super关键字">super关键字</h3>
 
-<h3 id="参考">参考</h3>
+<p>super关键字用于从子类访问父类的变量和方法。例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">public class Super {
+    protected int number；
+    protected showNumber() {
+        System.out.println(&#34;number= &#34; + number);
+    }
+}
+
+public class Sub extends Super {
+    var bar() {
+        super.number = 10;
+        super.showNumber();
+    }
+}</pre></td></tr></table>
+</div>
+</div>
+<p>在上面的例子中，Sub类访问父类成员变量<code>number</code>并调用其父类Super的<code>showNumber()</code>方法.</p>
+
+<p><strong>使用this和super要注意的问题：</strong></p>
+
+<ul>
+<li><p>在构造器中使用<code>super()</code>调用父类的其他构造方法时，该语句必须处于构造器的首行，否则编译器会报错。另外，this调用本类中的其他构造方法时，也要放在首行。</p></li>
+
+<li><p>this、super不能用在static方法中。</p></li>
+</ul>
+
+<p><strong>说明</strong></p>
+
+<p>被static修饰的成员属于类，不属于单个这个类的某个对象，被类中所有对象共享。而this代表对本类对象的引用，指向本来对象；而super代表对父类对象的引用，指向父类对象。
+所以，this和super是属于对象范畴的东西，而静态方法是属于类范畴的东西。</p>
 
 <h2 id="static关键字详解">static关键字详解</h2>
 
 <h3 id="static关键字主要有以下四种使用场景">static关键字主要有以下四种使用场景</h3>
 
-<h3 id="补充内容">补充内容</h3>
+<ol>
+<li><p>修饰成员变量和成员方法</p></li>
+
+<li><p>静态代码块</p></li>
+
+<li><p>修饰类（只能修饰内部类）</p></li>
+
+<li><p>静态导包（用来导入类中的静态资源，1.5之后的新特性）</p></li>
+</ol>
+
+<h4 id="修饰成员变量和成员方法-常用"><strong>修饰成员变量和成员方法（常用）</strong></h4>
+
+<p>被static修饰的成员属于类，不属于单个这个类的某个对象，被类中所有对象共享，可以并建议通过类名调用。被static声明的成员变量属于静态成员变量，静态变量存放在Java内存区域的方法区</p>
+
+<p>方法区与Java堆一样，是各个线程共享的内存区域，它用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。虽然java虚拟机规范把方法区描述为堆的一个逻辑部分，但是它却有一个别名叫做Non-Heap（非堆），目的应该是与Java堆区分开来</p>
+
+<p>HotSpot虚拟机中方法区也常被称为&rdquo;永久代&rdquo;，本质上两者并不等价。仅仅是因为HotSpot虚拟机设计团队用永久代来实现方法区而已，这样HotSpot虚拟机的垃圾收集器就可以像管理Java堆一样管理这部分内存了。但是这并不是一个好主意，因为这样更容易遇到内存溢出问题。</p>
+
+<p>调用格式：</p>
+
+<ul>
+<li><p>类名.静态变量名</p></li>
+
+<li><p>类名.静态方法名()</p></li>
+</ul>
+
+<p>如果变量或者方法被private则代表该属性或者该方法只能在类的内部被访问而不能在类的外部被访问。</p>
+
+<p>测试方法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Java" data-lang="Java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Java" data-lang="Java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StaticBean</span> <span class="o">{</span>
+    
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>    <span class="c1">//静态变量
+</span><span class="c1"></span>
+    <span class="kd">public</span> <span class="nf">StaticBean</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">SayHello</span><span class="o">()</span> <span class="o">{</span>  <span class="c1">//静态方法
+</span><span class="c1"></span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Hello</span> <span class="n">i</span> <span class="n">am</span> <span class="n">java</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">StaticBean</span><span class="o">{</span> <span class="o">+</span> 
+            <span class="n">name</span> <span class="o">=</span> <span class="err">&#39;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="sc">&#39;&#39;&#39;</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span>
+            <span class="sc">&#39;}&#39;</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">StaticDemo</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">StaticBean</span> <span class="n">staticBean</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StaticBean</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
+        <span class="n">StaticBean</span> <span class="n">staticBean2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StaticBean</span><span class="o">(</span><span class="n">2</span><span class="o">);</span>
+        <span class="n">StaticBean</span> <span class="n">staticBean3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StaticBean</span><span class="o">(</span><span class="n">3</span><span class="o">);</span>
+        <span class="n">StaticBean</span> <span class="n">staticBean4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StaticBean</span><span class="o">(</span><span class="n">4</span><span class="o">);</span>
+        <span class="n">StaticBean</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">33</span><span class="o">;</span>
+
+        <span class="n">StaticBean</span><span class="o">{</span><span class="n">name</span><span class="o">=</span><span class="sc">&#39;1&#39;</span><span class="n">age33</span><span class="o">}</span> <span class="n">StaticBean</span><span class="o">{</span><span class="n">name</span><span class="o">=</span><span class="sc">&#39;2&#39;</span><span class="n">age33</span><span class="o">}</span> <span class="n">StaticBean</span><span class="o">{</span><span class="n">name</span><span class="o">=</span><span class="sc">&#39;3&#39;</span><span class="n">age33</span><span class="o">}</span> <span class="n">StaticBean</span><span class="o">{</span><span class="n">name</span><span class="o">=</span><span class="sc">&#39;4&#39;</span><span class="n">age33</span><span class="o">}</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">staticBean</span><span class="o">+</span> <span class="o">+</span><span class="n">staticBean2</span><span class="o">+</span> <span class="o">+</span><span class="n">staticBean3</span><span class="o">+</span> <span class="o">+</span><span class="n">staticBean4</span><span class="o">);</span>
+        <span class="n">StaticBean</span><span class="o">.</span><span class="na">SayHello</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="静态代码块"><strong>静态代码块</strong></h4>
+
+<p>静态代码块定义在类中方法外，静态代码块在非静态代码块之前执行(静态代码块&ndash;非静态代码块&ndash;构造方法)。该类不管创建多少对象，静态代码只执行一次。</p>
+
+<p>静态代码块的格式是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">static {
+    语句体;
+}</pre></td></tr></table>
+</div>
+</div>
+<p>一个类中的静态代码块可以有多个，位置可以随便放，它不在任何的方法体内，JVM加载类时会执行这些静态的代码块，如果静态代码块有多个，JVM将按照它们在类中出现的先后顺序依次执行它们，每个代码块只会被执行一次。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Demo</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="o">{</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">3</span><span class="o">;</span>     <span class="c1">//可以赋值
+</span><span class="c1"></span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>       <span class="c1">//ERROR 不能访问
+</span><span class="c1"></span>    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">i</span><span class="o">;</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>静态代码块对于定义在它之后的静态变量，可以赋值，但是不能访问。</p>
+
+<h4 id="静态内部类"><strong>静态内部类</strong></h4>
 
 <hr />
 
@@ -260,7 +457,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2019-07-24
+        2019-07-26
         
     </span>
   </p>
