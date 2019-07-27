@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>office on Jachin - Stay foolish and stay hungry</title>
-    <link>http://localhost:1313/categories/office/</link>
-    <description>Recent content in office on Jachin - Stay foolish and stay hungry</description>
+    <title>水印 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/%E6%B0%B4%E5%8D%B0/</link>
+    <description>Recent content in 水印 on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jul 2019 19:11:12 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/office/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/%E6%B0%B4%E5%8D%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://localhost:1313/post/ppt%E6%B7%BB%E5%8A%A0%E6%B0%B4%E5%8D%B0/</guid>
       <description>关于水印 水印一般指在图片上加的防止他人盗图的半透明logo或图标，常见于网站中的配图，如果是使用过新浪博客、微信公众号中，应该均有了解。 水印</description>
-    </item>
-    
-    <item>
-      <title>Word邮件合并功能</title>
-      <link>http://localhost:1313/post/word-excel-import/</link>
-      <pubDate>Fri, 05 Jul 2019 16:32:24 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/word-excel-import/</guid>
-      <description>功能简介 将Excel中的数据批量导入到word模板中的指定位置 举例说明 例如打印成绩单，每个人的成绩单模板一致，但是每个人的成绩不同，这时候就</description>
     </item>
     
   </channel>
