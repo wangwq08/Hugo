@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>site on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/site/</link>
+    <description>Recent content in site on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jul 2019 14:07:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PV、UV、IP的区别与关系</title>
+      <link>http://localhost:1313/post/pvuvip%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Sun, 28 Jul 2019 14:07:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/pvuvip%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E5%85%B3%E7%B3%BB/</guid>
+      <description>什么是PV值？ PV(page view)即页面浏览量或点击量，是衡量一个网站或网页用户访问量。具体来说是指所有访问者在24小时内看了某个网站多少个页面或某</description>
+    </item>
+    
+  </channel>
+</rss>
