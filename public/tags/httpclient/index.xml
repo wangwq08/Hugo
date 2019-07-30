@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HttpClient on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/httpclient/</link>
+    <description>Recent content in HttpClient on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jul 2019 14:07:09 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/httpclient/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Httpclient调用第三方接口</title>
+      <link>http://localhost:1313/post/httpclient%E8%B0%83%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Tue, 30 Jul 2019 14:07:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/httpclient%E8%B0%83%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8E%A5%E5%8F%A3/</guid>
+      <description>关于接口调用 由于现在的开发模式是前后端分离开发，且趋向于接口开发，微服务。在与第三方合作的过程中，往往是通过接口调用。这里就涉及到如何调用他</description>
+    </item>
+    
+  </channel>
+</rss>

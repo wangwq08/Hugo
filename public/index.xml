@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Httpclient调用第三方接口</title>
+      <link>http://localhost:1313/post/httpclient%E8%B0%83%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Tue, 30 Jul 2019 14:07:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/httpclient%E8%B0%83%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8E%A5%E5%8F%A3/</guid>
+      <description>关于接口调用 由于现在的开发模式是前后端分离开发，且趋向于接口开发，微服务。在与第三方合作的过程中，往往是通过接口调用。这里就涉及到如何调用他</description>
+    </item>
+    
+    <item>
       <title>Json数据类型转换</title>
       <link>http://localhost:1313/post/json%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
       <pubDate>Tue, 30 Jul 2019 08:29:59 +0800</pubDate>
