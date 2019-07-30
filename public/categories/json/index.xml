@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/json/</link>
+    <description>Recent content in Json on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jul 2019 08:29:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Json数据类型转换</title>
+      <link>http://localhost:1313/post/json%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Tue, 30 Jul 2019 08:29:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/json%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
+      <description>Json数据类型介绍 JSON(JavaScript Object Notation)是一种轻量级的数据交换格式。易于人阅读和编写。同时易于机器解析和生成。它是基于JavaScript</description>
+    </item>
+    
+  </channel>
+</rss>
