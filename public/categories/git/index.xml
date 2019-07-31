@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/git/</link>
+    <description>Recent content in Git on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jul 2019 16:42:49 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git介绍与使用</title>
+      <link>http://localhost:1313/post/git%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 30 Jul 2019 16:42:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/git%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>关于Git是什么？ Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。Git是Linus Torvalds</description>
+    </item>
+    
+  </channel>
+</rss>

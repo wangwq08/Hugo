@@ -18,6 +18,11 @@ tags: ["Git"]
 git status
 ```
 
+* 添加
+```
+git add .
+```
+
 * 提交
 
 ```
