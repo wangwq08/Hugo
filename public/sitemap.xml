@@ -3,7 +3,44 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-07-30T16:42:49+08:00</lastmod>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/chrome/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/chrome/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2019-07-31T09:25:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,18 +61,6 @@
     <lastmod>2019-07-30T16:42:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-07-30T16:42:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-07-30T16:42:49+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
