@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>物理 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/%E7%89%A9%E7%90%86/</link>
+    <description>Recent content in 物理 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Aug 2019 08:51:55 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>薛定谔的猫</title>
+      <link>http://localhost:1313/post/%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB/</link>
+      <pubDate>Thu, 01 Aug 2019 08:51:55 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB/</guid>
+      <description>前言 很多人，在日常生活中，当一件事不确定的时候，总是喜欢用薛定谔的猫来进行调侃，那么薛定谔的猫是什么呢？ 今天看了B站李永乐老师的视频，进行一</description>
+    </item>
+    
+  </channel>
+</rss>

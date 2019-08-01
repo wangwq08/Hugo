@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>薛定谔的猫</title>
+      <link>http://localhost:1313/post/%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB/</link>
+      <pubDate>Thu, 01 Aug 2019 08:51:55 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB/</guid>
+      <description>前言 很多人，在日常生活中，当一件事不确定的时候，总是喜欢用薛定谔的猫来进行调侃，那么薛定谔的猫是什么呢？ 今天看了B站李永乐老师的视频，进行一</description>
+    </item>
+    
+    <item>
       <title>常用接口数据对象封装</title>
       <link>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%95%B0%E6%8D%AE%E5%B0%81%E8%A3%85/</link>
       <pubDate>Wed, 31 Jul 2019 15:50:49 +0800</pubDate>
