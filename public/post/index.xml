@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Aug 2019 17:40:09 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 18:14:57 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Informix查询日期第一天</title>
+      <link>http://localhost:1313/post/informix%E6%9F%A5%E8%AF%A2%E6%97%A5%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%A4%A9/</link>
+      <pubDate>Fri, 02 Aug 2019 18:14:57 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/informix%E6%9F%A5%E8%AF%A2%E6%97%A5%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%A4%A9/</guid>
+      <description>前言 当涉及到实现报表功能的时候，往往会需要不同的时间维度，例如当日、当月、当年的数据。 数据库中一般都有对应的函数去实现，不需要重新去实现。 获</description>
+    </item>
     
     <item>
       <title>电脑必备工具</title>
