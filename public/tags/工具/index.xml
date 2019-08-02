@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Aug 2019 17:40:09 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>电脑必备工具</title>
+      <link>http://localhost:1313/post/%E7%94%B5%E8%84%91%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Thu, 01 Aug 2019 17:40:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%94%B5%E8%84%91%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</guid>
+      <description>办公处理软件 Microsoft office Microsoft office 是微软公司开发的基于Windows操作系统的办公软件套装，常用Word, Excel, PowerPoint等。以及outlook邮箱</description>
+    </item>
+    
+  </channel>
+</rss>
