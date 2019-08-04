@@ -155,6 +155,6 @@ public static void main(String[] args) throws DocumentException {
 ```
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=472129311&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=472129311&auto=1&height=66"></iframe>
 
 > 外面的世界，很精彩。外面的世界，很无奈。
