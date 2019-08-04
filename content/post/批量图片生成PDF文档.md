@@ -27,7 +27,36 @@ tags: ["图片","PDF"]
 **编写一个调用接口的server类**
 
 ```java
-@Todo
+/**
+* @Description: 调用接口的封装方法
+* @Author: wangwq
+* @CreateDate: 2019/08/04 17:44
+*/
+public HttpEntity getImgDataByGet(String url, String data) {
+    CloseableHttpClient  client = null;
+    
+    if(client == null) {
+        client = new DefaultHttpClient();
+        HttpHost proxy = new HttpHost("address", port);  //这里设置代理，如果是外网环境可以不用设置。
+        client.getParams().setParameter(ConnRouteParams.DEFAULT_PROXY, proxy);
+    }
+
+    try {
+        HttpGet get= new HttpGet(url);
+        StringEntity stringEntity = new StringEntity("data="+data);
+        get.setHeader("Content-Type", "application/javascript;charset=GBK");
+        HttpResponse response = client.execute(get);
+        HttpEntity httpEntity = response.getEntity();
+
+        if (httpEntity != null) {
+            return httpEntity;
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    return null;
+}
 ```
 
 **编写一个调用接口批量下载图片的controller类**
@@ -124,5 +153,8 @@ public static void main(String[] args) throws DocumentException {
     System.out.println("The program runs: " + time + "s");
 }
 ```
+---
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=472129311&auto=1&height=66"></iframe>
 
 > 外面的世界，很精彩。外面的世界，很无奈。

@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2019-08-03T15:50:49&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-03T15:50:49&#43;08:00" />
-<meta itemprop="wordCount" content="787">
+<meta itemprop="wordCount" content="925">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/%E5%9B%BE%E7%89%87/"> 图片 </a>
             </div>
-          <span class="more-meta"> 787 words </span>
+          <span class="more-meta"> 925 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -179,10 +179,68 @@
 <p><strong>编写一个调用接口的server类</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Todo</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
+</span><span class="cm">* @Description: 调用接口的封装方法
+</span><span class="cm">* @Author: wangwq
+</span><span class="cm">* @CreateDate: 2019/08/04 17:44
+</span><span class="cm">*/</span>
+<span class="kd">public</span> <span class="n">HttpEntity</span> <span class="nf">getImgDataByGet</span><span class="o">(</span><span class="n">String</span> <span class="n">url</span><span class="o">,</span> <span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">CloseableHttpClient</span>  <span class="n">client</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    
+    <span class="k">if</span><span class="o">(</span><span class="n">client</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">client</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DefaultHttpClient</span><span class="o">();</span>
+        <span class="n">HttpHost</span> <span class="n">proxy</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HttpHost</span><span class="o">(</span><span class="s">&#34;address&#34;</span><span class="o">,</span> <span class="n">port</span><span class="o">);</span>  <span class="c1">//这里设置代理，如果是外网环境可以不用设置。
+</span><span class="c1"></span>        <span class="n">client</span><span class="o">.</span><span class="na">getParams</span><span class="o">().</span><span class="na">setParameter</span><span class="o">(</span><span class="n">ConnRouteParams</span><span class="o">.</span><span class="na">DEFAULT_PROXY</span><span class="o">,</span> <span class="n">proxy</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="k">try</span> <span class="o">{</span>
+        <span class="n">HttpGet</span> <span class="n">get</span><span class="o">=</span> <span class="k">new</span> <span class="n">HttpGet</span><span class="o">(</span><span class="n">url</span><span class="o">);</span>
+        <span class="n">StringEntity</span> <span class="n">stringEntity</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringEntity</span><span class="o">(</span><span class="s">&#34;data=&#34;</span><span class="o">+</span><span class="n">data</span><span class="o">);</span>
+        <span class="n">get</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">&#34;Content-Type&#34;</span><span class="o">,</span> <span class="s">&#34;application/javascript;charset=GBK&#34;</span><span class="o">);</span>
+        <span class="n">HttpResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">get</span><span class="o">);</span>
+        <span class="n">HttpEntity</span> <span class="n">httpEntity</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="na">getEntity</span><span class="o">();</span>
+
+        <span class="k">if</span> <span class="o">(</span><span class="n">httpEntity</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">httpEntity</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="o">}</span></code></pre></td></tr></table>
 </div>
 </div>
 <p><strong>编写一个调用接口批量下载图片的controller类</strong></p>
@@ -364,6 +422,10 @@
 <span class="o">}</span></code></pre></td></tr></table>
 </div>
 </div>
+<hr />
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=472129311&auto=1&height=66"></iframe>
+
 <blockquote>
 <p>外面的世界，很精彩。外面的世界，很无奈。</p>
 </blockquote>
