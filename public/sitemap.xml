@@ -3,8 +3,45 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-08-02T18:14:57+08:00</lastmod>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/pdf/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/%E6%89%B9%E9%87%8F%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90pdf%E6%96%87%E6%A1%A3/</loc>
+    <lastmod>2019-08-03T15:50:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -12,18 +49,6 @@
     <lastmod>2019-08-02T18:14:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-08-02T18:14:57+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-08-02T18:14:57+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

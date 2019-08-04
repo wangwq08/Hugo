@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图片 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/%E5%9B%BE%E7%89%87/</link>
+    <description>Recent content in 图片 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Aug 2019 15:50:49 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>批量图片生成PDF文档</title>
+      <link>http://localhost:1313/post/%E6%89%B9%E9%87%8F%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90pdf%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Sat, 03 Aug 2019 15:50:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%89%B9%E9%87%8F%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90pdf%E6%96%87%E6%A1%A3/</guid>
+      <description>前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析页</description>
+    </item>
+    
+  </channel>
+</rss>
