@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Aug 2019 19:48:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown文档添加音视频</title>
+      <link>http://localhost:1313/post/markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E9%9F%B3%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Sun, 04 Aug 2019 19:48:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E9%9F%B3%E8%A7%86%E9%A2%91/</guid>
+      <description>前言 Markdown文档是一种非常强大，且方便的文档格式，尤其适用于技术文档。在写作的过程中发现有的时候需要引入音频和视频。 添加音频 1 &amp;lt;iframe frameborder=&amp;#34;no&amp;#34; border=&amp;#34;0&amp;#34;</description>
+    </item>
+    
+  </channel>
+</rss>

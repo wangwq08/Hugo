@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Markdown文档添加音视频</title>
+      <link>http://localhost:1313/post/markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E9%9F%B3%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Sun, 04 Aug 2019 19:48:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E9%9F%B3%E8%A7%86%E9%A2%91/</guid>
+      <description>前言 Markdown文档是一种非常强大，且方便的文档格式，尤其适用于技术文档。在写作的过程中发现有的时候需要引入音频和视频。 添加音频 1 &amp;lt;iframe frameborder=&amp;#34;no&amp;#34; border=&amp;#34;0&amp;#34;</description>
+    </item>
+    
+    <item>
       <title>批量图片生成PDF文档</title>
       <link>http://localhost:1313/post/%E6%89%B9%E9%87%8F%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90pdf%E6%96%87%E6%A1%A3/</link>
       <pubDate>Sat, 03 Aug 2019 15:50:49 +0800</pubDate>
