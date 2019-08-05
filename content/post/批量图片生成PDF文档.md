@@ -6,6 +6,8 @@ categories: ["图片"]
 tags: ["图片","PDF"]
 ---
 
+**[GitHub](https://github.com/wangwq08/ImageToPdf)**
+
 ## 前言
 
 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。
@@ -71,7 +73,7 @@ public HttpEntity getImgDataByGet(String url, String data) {
 @RestController
 @RequestMapping(value = "api/")
 public class JpgToPdf {
-    String url = "https://book.yunzhan365.com/poui/pudn/files/mobile/" ;  //图片的url地址
+    String url = "" ;  //图片的url地址
     String path = "D:/heimage/";   //保存到本地的地址
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());  //日志
@@ -113,11 +115,11 @@ public static void toPdf(String imageFolderPath, String pdfPath) throws Document
         String imagepath = null;
         FileOutputStream fos = new FileOutputStream(pdfPath);  //设置pdf的保存路径
         Document doc = new Document(null,0,0,0,0);
-        PDFWriter/getInstance(doc, fos);
+        PDFWriter.getInstance(doc, fos);
         BufferedImage img = null;
         Image image = null;
         File file = new File(imageFolderPath);
-        File[] files = files.listFiles();
+        File[] files = file.listFiles();
 
         doc.setPageSize(new Rectangle(1366, 122400));  //设置pdf宽度和总长度
 

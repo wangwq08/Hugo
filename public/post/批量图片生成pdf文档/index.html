@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Jachin" /><meta name="description" content="前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析页" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Jachin" /><meta name="description" content="GitHub 前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,26 +39,26 @@
 
 
 <meta property="og:title" content="批量图片生成PDF文档" />
-<meta property="og:description" content="前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析页" />
+<meta property="og:description" content="GitHub 前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/%E6%89%B9%E9%87%8F%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90pdf%E6%96%87%E6%A1%A3/" />
 <meta property="article:published_time" content="2019-08-03T15:50:49&#43;08:00"/>
 <meta property="article:modified_time" content="2019-08-03T15:50:49&#43;08:00"/>
 
 <meta itemprop="name" content="批量图片生成PDF文档">
-<meta itemprop="description" content="前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析页">
+<meta itemprop="description" content="GitHub 前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析">
 
 
 <meta itemprop="datePublished" content="2019-08-03T15:50:49&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-03T15:50:49&#43;08:00" />
-<meta itemprop="wordCount" content="925">
+<meta itemprop="wordCount" content="926">
 
 
 
 <meta itemprop="keywords" content="图片,PDF," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="批量图片生成PDF文档"/>
-<meta name="twitter:description" content="前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析页"/>
+<meta name="twitter:description" content="GitHub 前言 之前有一个朋友，提出一个需求。希望把微信推文生成PDF文档保存在本地。 分析 首先查看微信推文的内容，发现每一页推文是一张图片。 进一步分析"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/%E5%9B%BE%E7%89%87/"> 图片 </a>
             </div>
-          <span class="more-meta"> 925 words </span>
+          <span class="more-meta"> 926 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -155,6 +155,8 @@
 </div>
     <div class="post-content">
       
+
+<p><strong><a href="https://github.com/wangwq08/ImageToPdf">GitHub</a></strong></p>
 
 <h2 id="前言">前言</h2>
 
@@ -293,7 +295,7 @@
 <span class="nd">@RestController</span>
 <span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;api/&#34;</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">JpgToPdf</span> <span class="o">{</span>
-    <span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#34;https://book.yunzhan365.com/poui/pudn/files/mobile/&#34;</span> <span class="o">;</span>  <span class="c1">//图片的url地址
+    <span class="n">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#34;&#34;</span> <span class="o">;</span>  <span class="c1">//图片的url地址
 </span><span class="c1"></span>    <span class="n">String</span> <span class="n">path</span> <span class="o">=</span> <span class="s">&#34;D:/heimage/&#34;</span><span class="o">;</span>   <span class="c1">//保存到本地的地址
 </span><span class="c1"></span>
     <span class="kd">private</span> <span class="kd">final</span> <span class="n">Logger</span> <span class="n">logger</span> <span class="o">=</span> <span class="n">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">());</span>  <span class="c1">//日志
@@ -367,11 +369,11 @@
         <span class="n">String</span> <span class="n">imagepath</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
         <span class="n">FileOutputStream</span> <span class="n">fos</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="n">pdfPath</span><span class="o">);</span>  <span class="c1">//设置pdf的保存路径
 </span><span class="c1"></span>        <span class="n">Document</span> <span class="n">doc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Document</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">0</span><span class="o">);</span>
-        <span class="n">PDFWriter</span><span class="o">/</span><span class="n">getInstance</span><span class="o">(</span><span class="n">doc</span><span class="o">,</span> <span class="n">fos</span><span class="o">);</span>
+        <span class="n">PDFWriter</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="n">doc</span><span class="o">,</span> <span class="n">fos</span><span class="o">);</span>
         <span class="n">BufferedImage</span> <span class="n">img</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
         <span class="n">Image</span> <span class="n">image</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
         <span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="n">imageFolderPath</span><span class="o">);</span>
-        <span class="n">File</span><span class="o">[]</span> <span class="n">files</span> <span class="o">=</span> <span class="n">files</span><span class="o">.</span><span class="na">listFiles</span><span class="o">();</span>
+        <span class="n">File</span><span class="o">[]</span> <span class="n">files</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="na">listFiles</span><span class="o">();</span>
 
         <span class="n">doc</span><span class="o">.</span><span class="na">setPageSize</span><span class="o">(</span><span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="n">1366</span><span class="o">,</span> <span class="n">122400</span><span class="o">));</span>  <span class="c1">//设置pdf宽度和总长度
 </span><span class="c1"></span>
