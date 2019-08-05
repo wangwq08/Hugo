@@ -69,7 +69,7 @@ public HttpEntity getImgDataByGet(String url, String data) {
 */
 @Component
 @RestController
-@ReaquestMapping(value = "api/")
+@RequestMapping(value = "api/")
 public class JpgToPdf {
     String url = "https://book.yunzhan365.com/poui/pudn/files/mobile/" ;  //图片的url地址
     String path = "D:/heimage/";   //保存到本地的地址

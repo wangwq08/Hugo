@@ -32,10 +32,10 @@ Markdown文档是一种非常强大，且方便的文档格式，尤其适用于
 
 ## 添加图片
 
-![image](http://mpic.tiankong.com/2d6/a5b/2d6a5ba52afb756966441c8a0e0d73e9/640.jpg@!240h)
+![image](https://imgtrip.oss-cn-shenzhen.aliyuncs.com/2559b11d/bc3c97ecacf0d703dfd11c90f5f1b56c.jpg!o)
 
 ```
-![image](http://mpic.tiankong.com/2d6/a5b/2d6a5ba52afb756966441c8a0e0d73e9/640.jpg@!240h)
+![image](https://imgtrip.oss-cn-shenzhen.aliyuncs.com/2559b11d/bc3c97ecacf0d703dfd11c90f5f1b56c.jpg!o)
 ```
 
 > 那天我双手合十，看着镜子里狼狈的自己。
