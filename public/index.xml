@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Node Sass报错的解决办法</title>
+      <link>http://localhost:1313/post/node-sass%E6%8A%A5%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</link>
+      <pubDate>Tue, 06 Aug 2019 21:08:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/node-sass%E6%8A%A5%E9%94%99%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</guid>
+      <description>前言 最近准备尝试一个前后端的开发项目，在GitHub上找了好久，最终找到了一个商城项目。克隆在本地运行前端项目 运行过程 1 2 3 cd 项目路径 npm install npm</description>
+    </item>
+    
+    <item>
       <title>Markdown文档添加音视频</title>
       <link>http://localhost:1313/post/markdown%E6%96%87%E6%A1%A3%E6%B7%BB%E5%8A%A0%E9%9F%B3%E8%A7%86%E9%A2%91/</link>
       <pubDate>Sun, 04 Aug 2019 19:48:08 +0800</pubDate>
