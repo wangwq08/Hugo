@@ -6,10 +6,28 @@
     <description>Recent content in Abouts on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jul 2019 11:45:39 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 21:21:29 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Personal Resume En</title>
+      <link>http://localhost:1313/about/personal-resume-en/</link>
+      <pubDate>Wed, 07 Aug 2019 21:21:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/personal-resume-en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal Resume Cn</title>
+      <link>http://localhost:1313/about/personal-resume-cn/</link>
+      <pubDate>Wed, 07 Aug 2019 21:20:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/personal-resume-cn/</guid>
+      <description>联系方式 手机： 15917919676 Email: wqwang0220@gmail.com 微信： Arvine2012 个人信息 王伟强/男/1995.02.20 本科/汕头大学计算机系计算机科学与技术专业/英语四级 技术博客： wqwang08.com GitHub: https://github.com/wangwq08 Ja</description>
+    </item>
     
     <item>
       <title>About</title>

@@ -3,7 +3,82 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-08-06T21:08:08+08:00</lastmod>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/personal-resume-en/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/personal-resume-cn/</loc>
+    <lastmod>2019-08-07T21:20:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/aes/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/des/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/md/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/%E5%87%A0%E7%A7%8D%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2019-08-07T17:22:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -12,18 +87,6 @@
     <lastmod>2019-08-06T21:08:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-08-06T21:08:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-08-06T21:08:08+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -566,12 +629,6 @@
     <lastmod>2019-07-02T11:45:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2019-07-02T11:45:39+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
