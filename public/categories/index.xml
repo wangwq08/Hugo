@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>resume</title>
+      <link>http://localhost:1313/categories/resume/</link>
+      <pubDate>Wed, 07 Aug 2019 21:20:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>加密</title>
       <link>http://localhost:1313/categories/%E5%8A%A0%E5%AF%86/</link>
       <pubDate>Wed, 07 Aug 2019 17:22:06 +0800</pubDate>

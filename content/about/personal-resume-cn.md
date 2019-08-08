@@ -10,7 +10,7 @@ tags: ["personal resume"]
 
 * 手机： 15917919676
 
-* Email: wqwang0220@gmail.com
+* 邮箱: wqwang0220@gmail.com
 
 * 微信： Arvine2012
 
@@ -83,7 +83,7 @@ tags: ["personal resume"]
 
 * 数据库：MySQL/Informix/PostgreSql
 
-* linux: Debian/Arch linux/Deepin
+* Linux: Debian/Arch linux/Deepin
 
 * 版本管理： Git
 

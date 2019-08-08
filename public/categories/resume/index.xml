@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resume on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/resume/</link>
+    <description>Recent content in resume on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2019 21:20:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personal Resume Cn</title>
+      <link>http://localhost:1313/about/personal-resume-cn/</link>
+      <pubDate>Wed, 07 Aug 2019 21:20:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/personal-resume-cn/</guid>
+      <description>联系方式 手机： 15917919676 邮箱: wqwang0220@gmail.com 微信： Arvine2012 个人信息 王伟强/男/1995.02.20 本科/汕头大学计算机系计算机科学与技术专业/英语四级 技术博客： http://wqwang08.com/ GitHub: https://github.com/wangwq08</description>
+    </item>
+    
+  </channel>
+</rss>
