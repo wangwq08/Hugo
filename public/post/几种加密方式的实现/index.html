@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2019-08-07T17:22:06&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-07T17:22:06&#43;08:00" />
-<meta itemprop="wordCount" content="917">
+<meta itemprop="wordCount" content="1014">
 
 
 
@@ -132,8 +132,8 @@
         <div class="post-category">
             <a href="/categories/%E5%8A%A0%E5%AF%86/"> 加密 </a>
             </div>
-          <span class="more-meta"> 917 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 1014 words </span>
+          <span class="more-meta"> 3 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
     </header>
@@ -479,6 +479,17 @@
 </span><span class="lnt">39
 </span><span class="lnt">40
 </span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="cm">/**
@@ -502,7 +513,7 @@
         <span class="n">cipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="n">Cipher</span><span class="o">.</span><span class="na">ENCRYPT_MODE</span><span class="o">,</span> <span class="n">secretKey</span><span class="o">,</span> <span class="n">iv</span><span class="o">);</span>
         <span class="kt">byte</span><span class="o">[]</span> <span class="n">encryptbyte</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">content</span><span class="o">.</span><span class="na">getBytes</span><span class="o">());</span>
         
-        <span class="k">return</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">Base64</span><span class="o">.</span><span class="na">encode</span><span class="o">(</span><span class="n">encryptbyte</span><span class="o">));</span> 
+        <span class="k">return</span> <span class="n">bytesToString</span><span class="o">(</span><span class="n">encryptbyte</span><span class="o">);</span> 
     <span class="o">}</span>
 
     <span class="cm">/**
@@ -517,13 +528,26 @@
         <span class="n">SecretKeyFactory</span> <span class="n">keyFactory</span> <span class="o">=</span> <span class="n">SecretKeyFactory</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">&#34;DES&#34;</span><span class="o">);</span>
         <span class="n">SecretKey</span> <span class="n">secretKey</span> <span class="o">=</span> <span class="n">keyFactory</span><span class="o">.</span><span class="na">generateSecret</span><span class="o">(</span><span class="n">desKeySpec</span><span class="o">);</span>
         <span class="n">IvParameterSpec</span> <span class="n">iv</span> <span class="o">=</span> <span class="k">new</span> <span class="n">IvParameterSpec</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getBytes</span><span class="o">(</span><span class="s">&#34;UTF-8&#34;</span><span class="o">));</span>
+
         <span class="n">cipher</span><span class="o">.</span><span class="na">init</span><span class="o">(</span><span class="n">Cipher</span><span class="o">.</span><span class="na">DECRYPT_MODE</span><span class="o">,</span> <span class="n">secretKey</span><span class="o">,</span> <span class="n">iv</span><span class="o">);</span>
         <span class="kt">byte</span><span class="o">[]</span> <span class="n">retByte</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="na">doFinal</span><span class="o">(</span><span class="n">bytesrc</span><span class="o">);</span>
+        
         <span class="k">return</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">retByte</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+</span><span class="cm">    * @Description: 字节数组转换为字符串
+</span><span class="cm">    * @Author: wangwq
+</span><span class="cm">    * @CreateDate: 2019/08/08 9:10
+</span><span class="cm">    */</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">bytesToString</span><span class="o">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">content</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Base64</span><span class="o">.</span><span class="na">getEncoder</span><span class="o">().</span><span class="na">encodeToString</span><span class="o">(</span><span class="n">content</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span></code></pre></td></tr></table>
 </div>
 </div>
+<p><strong>注意</strong> 当DES加密之后，容易出现乱码，这是因为返回的字节数组，转换为字符串乱码时，内存数据流和字符串的编码规则不同。</p>
+
 <blockquote>
 <p>人必有痴，而后有成。《林语堂》</p>
 </blockquote>
