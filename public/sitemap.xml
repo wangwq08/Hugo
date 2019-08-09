@@ -8,12 +8,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2019-08-07T21:21:29+08:00</lastmod>
     <priority>0</priority>
@@ -39,6 +33,12 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/categories/resume/</loc>
+    <lastmod>2019-08-07T21:21:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/about/personal-resume-cn/</loc>
     <lastmod>2019-08-07T21:20:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -47,12 +47,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/personal-resume/</loc>
-    <lastmod>2019-08-07T21:20:59+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/resume/</loc>
     <lastmod>2019-08-07T21:20:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -102,13 +96,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/node/</loc>
+    <loc>http://localhost:1313/categories/node/</loc>
     <lastmod>2019-08-06T21:08:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/node/</loc>
+    <loc>http://localhost:1313/tags/node/</loc>
     <lastmod>2019-08-06T21:08:08+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -120,13 +114,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
+    <loc>http://localhost:1313/categories/markdown/</loc>
     <lastmod>2019-08-04T19:48:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/markdown/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2019-08-04T19:48:08+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -157,13 +151,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%9B%BE%E7%89%87/</loc>
+    <loc>http://localhost:1313/categories/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2019-08-03T15:50:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E5%9B%BE%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2019-08-03T15:50:49+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -201,13 +195,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://localhost:1313/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2019-08-01T17:40:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://localhost:1313/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2019-08-01T17:40:09+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -276,13 +270,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/chrome/</loc>
+    <loc>http://localhost:1313/categories/chrome/</loc>
     <lastmod>2019-07-31T09:25:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/chrome/</loc>
+    <loc>http://localhost:1313/tags/chrome/</loc>
     <lastmod>2019-07-31T09:25:12+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -301,13 +295,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>http://localhost:1313/categories/git/</loc>
     <lastmod>2019-07-30T16:42:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2019-07-30T16:42:49+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -320,13 +314,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/httpclient/</loc>
+    <loc>http://localhost:1313/categories/httpclient/</loc>
     <lastmod>2019-07-30T14:07:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/httpclient/</loc>
+    <loc>http://localhost:1313/tags/httpclient/</loc>
     <lastmod>2019-07-30T14:07:09+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -345,13 +339,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/json/</loc>
+    <loc>http://localhost:1313/categories/json/</loc>
     <lastmod>2019-07-30T08:29:59+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/json/</loc>
+    <loc>http://localhost:1313/tags/json/</loc>
     <lastmod>2019-07-30T08:29:59+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -457,13 +451,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>http://localhost:1313/categories/java/</loc>
     <lastmod>2019-07-28T09:56:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/java/</loc>
+    <loc>http://localhost:1313/tags/java/</loc>
     <lastmod>2019-07-28T09:56:38+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -625,13 +619,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>http://localhost:1313/categories/hugo/</loc>
     <lastmod>2019-07-03T00:44:46+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2019-07-03T00:44:46+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -670,25 +664,25 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2018-05-21T15:18:11+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2018-05-21T15:18:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/aix/</loc>
-    <lastmod>2018-05-08T18:35:08+08:00</lastmod>
+    <loc>http://localhost:1313/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2018-05-21T15:18:11+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/aix/</loc>
+    <lastmod>2018-05-08T18:35:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/aix/</loc>
     <lastmod>2018-05-08T18:35:08+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -720,13 +714,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/programmer/</loc>
+    <loc>http://localhost:1313/categories/programmer/</loc>
     <lastmod>2019-07-05T17:46:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/programmer/</loc>
+    <loc>http://localhost:1313/tags/programmer/</loc>
     <lastmod>2019-07-05T17:46:10+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -752,13 +746,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E4%B8%AD%E6%96%87/</loc>
+    <loc>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</loc>
     <lastmod>2017-08-30T01:37:56+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E4%B8%AD%E6%96%87/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%AD%E6%96%87/</loc>
     <lastmod>2017-08-30T01:37:56+08:00</lastmod>
     <priority>0</priority>
   </url>
