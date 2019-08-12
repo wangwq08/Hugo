@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>整型 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/tags/%E6%95%B4%E5%9E%8B/</link>
+    <description>Recent content in 整型 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Aug 2019 11:47:04 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E6%95%B4%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java疑难点(一)</title>
+      <link>http://localhost:1313/post/java%E7%96%91%E9%9A%BE%E7%82%B9%E4%B8%80/</link>
+      <pubDate>Mon, 12 Aug 2019 11:47:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E7%96%91%E9%9A%BE%E7%82%B9%E4%B8%80/</guid>
+      <description>正确使用equals()方法 Object的equals方法容易抛空指针异常，应该使用常量或确定有值的对象来调用equals. 举例： 1 2 3 4 5</description>
+    </item>
+    
+  </channel>
+</rss>
