@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>BigDecimal的介绍及使用 - Jachin - Stay foolish and stay hungry</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jachin" /><meta name="description" content="BigDecimal的用处 《阿里巴巴Java开发手册》提到：浮点数之间的等值判断，基本数据类型不能用 == 来比较，包装数据类型不能用equals" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/bigdecimal%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="BigDecimal的介绍及使用" />
+<meta property="og:description" content="BigDecimal的用处 《阿里巴巴Java开发手册》提到：浮点数之间的等值判断，基本数据类型不能用 == 来比较，包装数据类型不能用equals" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/bigdecimal%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/" />
+<meta property="article:published_time" content="2019-08-12T12:23:54&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-12T12:23:54&#43;08:00"/>
+
+<meta itemprop="name" content="BigDecimal的介绍及使用">
+<meta itemprop="description" content="BigDecimal的用处 《阿里巴巴Java开发手册》提到：浮点数之间的等值判断，基本数据类型不能用 == 来比较，包装数据类型不能用equals">
+
+
+<meta itemprop="datePublished" content="2019-08-12T12:23:54&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-12T12:23:54&#43;08:00" />
+<meta itemprop="wordCount" content="581">
+
+
+
+<meta itemprop="keywords" content="java,BigDecimal," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="BigDecimal的介绍及使用"/>
+<meta name="twitter:description" content="BigDecimal的用处 《阿里巴巴Java开发手册》提到：浮点数之间的等值判断，基本数据类型不能用 == 来比较，包装数据类型不能用equals"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Jachin&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/about">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Jachin&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/about">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">BigDecimal的介绍及使用</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-12 </span>
+        <div class="post-category">
+            <a href="/categories/java/"> Java </a>
+            </div>
+          <span class="more-meta"> 581 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#bigdecimal的用处">BigDecimal的用处</a></li>
+<li><a href="#bigdecimal的大小比较">BigDecimal的大小比较</a></li>
+<li><a href="#bigdecimal保留几位小数">BigDecimal保留几位小数</a></li>
+<li><a href="#bigdecimal-的使用注意事项">BigDecimal 的使用注意事项</a></li>
+<li><a href="#总结">总结</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h2 id="bigdecimal的用处">BigDecimal的用处</h2>
+
+<blockquote>
+<p>《阿里巴巴Java开发手册》提到：浮点数之间的等值判断，基本数据类型不能用 == 来比较，包装数据类型不能用equals来判断。</p>
+</blockquote>
+
+<p>具体原理和浮点数的编码有关，这里使用实例说明</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kt">float</span> <span class="n">a</span> <span class="o">=</span> <span class="n">1</span><span class="o">.</span><span class="na">0f</span> <span class="o">-</span> <span class="n">0</span><span class="o">.</span><span class="na">9f</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="n">0</span><span class="o">.</span><span class="na">9f</span> <span class="o">-</span> <span class="n">0</span><span class="o">.</span><span class="na">8f</span><span class="o">;</span>
+
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">);</span> <span class="c1">//0.100000024
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">);</span> <span class="c1">//0.099999964
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="o">);</span> <span class="o">//</span><span class="kc">false</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>根据基本的数学知识，很显然输出并不是想要的结果（<strong>精度丢失</strong>）。如何解决这个问题呢？一种很常用的方法是：<strong>使用BigDecimal来定义浮点数的值，再进行浮点数的运算操作</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BigDecimal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;1.0&#34;</span><span class="o">);</span>
+<span class="n">BigDecimal</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;0.9&#34;</span><span class="o">);</span>
+<span class="n">BigDecimal</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;0.8&#34;</span><span class="o">);</span>
+
+<span class="n">BigDecimal</span> <span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="na">subtract</span><span class="o">(</span><span class="n">b</span><span class="o">);</span> <span class="c1">//0.1
+</span><span class="c1"></span><span class="n">BigDecimal</span> <span class="n">y</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="na">subtract</span><span class="o">(</span><span class="n">c</span><span class="o">);</span> <span class="c1">//0.1
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">x</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">y</span><span class="o">));</span>  <span class="o">//</span><span class="kc">true</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="bigdecimal的大小比较">BigDecimal的大小比较</h2>
+
+<p><code>a.compareTo(b)</code>: 返回-1表示小于，0表示等于，1表示大于</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BigDecimal</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;1.0&#34;</span><span class="o">);</span>
+<span class="n">BigDecimal</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;0.9&#34;</span><span class="o">);</span>
+
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">b</span><span class="o">));</span>  <span class="o">//</span><span class="n">1</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="bigdecimal保留几位小数">BigDecimal保留几位小数</h2>
+
+<p>通过<code>setScale</code>方法设置保留几位小数及保留规则。保留规则有多种，IDEA可以自动提示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BigDecimal</span> <span class="n">m</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;1.255433&#34;</span><span class="o">);</span>
+<span class="n">BigDecimal</span> <span class="n">n</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="na">setScale</span><span class="o">(</span><span class="n">3</span><span class="o">,</span> <span class="n">BigDecimal</span><span class="o">.</span><span class="na">ROUND_HALF_DOWN</span><span class="o">);</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span> <span class="o">//</span><span class="n">1</span><span class="o">.</span><span class="na">255</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="bigdecimal-的使用注意事项">BigDecimal 的使用注意事项</h2>
+
+<p><strong>注意</strong> 在使用BigDecimal时，为了防止精度丢失，推荐使用它的BigDecimal(String)构造方法来创建对象。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BigDecimal</span> <span class="n">recommend1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">(</span><span class="s">&#34;0.1&#34;</span><span class="o">);</span>
+<span class="n">BigDecimal</span> <span class="n">recommend2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BigDecimal</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">0</span><span class="o">.</span><span class="na">1</span><span class="o">);</span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>《阿里巴巴开发手册》中对这部分内容有所提及,如下图所示。</p>
+</blockquote>
+
+<p><img src="https://camo.githubusercontent.com/b1c115758fbdca06d975ccb2ea9d948184d8478f/68747470733a2f2f6d792d626c6f672d746f2d7573652e6f73732d636e2d6265696a696e672e616c6979756e63732e636f6d2f323031392f372f426967446563696d616c2e706e67" alt="image" /></p>
+
+<h2 id="总结">总结</h2>
+
+<p>BigDecimal主要用来操作（大）浮点数，BigInteger主要用来操作大整数（超过long类型）</p>
+
+<p>BigDecimal的实现利用到了BigInteger，所不同的是BigDecimal加入了小数位的概念。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Jachin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-08-12
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/java/">java</a>
+          <a href="/tags/bigdecimal/">BigDecimal</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/java%E7%96%91%E9%9A%BE%E7%82%B9%E4%B8%80/">
+            <span class="next-text nav-default">Java疑难点(一)</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="wangwq08/wangwq08.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:644813712@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangwq08/wangwq08.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jachin</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
