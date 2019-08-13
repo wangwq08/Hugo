@@ -72,3 +72,7 @@ BigDecimal recommend2 = new BigDecimal.valueOf(0.1);
 BigDecimal主要用来操作（大）浮点数，BigInteger主要用来操作大整数（超过long类型）
 
 BigDecimal的实现利用到了BigInteger，所不同的是BigDecimal加入了小数位的概念。
+
+[参考资料](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%96%91%E9%9A%BE%E7%82%B9.md)
+
+> Where the skies are blue to see you once again.
