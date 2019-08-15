@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Aug 2019 09:07:34 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 11:41:29 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>数据结构</title>
+      <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Thu, 15 Aug 2019 11:41:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Java</title>

@@ -3,7 +3,50 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-08-13T09:07:34+08:00</lastmod>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/java%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E6%A0%88/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%A0%88/</loc>
+    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,18 +58,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2019-08-13T09:07:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-08-13T09:07:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2019-08-13T09:07:34+08:00</lastmod>
     <priority>0</priority>
   </url>
