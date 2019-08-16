@@ -131,4 +131,6 @@ public class MyStack {
     }
 ```
 
+[参考资料](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98.md)
+
 > An empty street, A empty house, A hole inside my heart.
