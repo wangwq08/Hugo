@@ -10,7 +10,7 @@ tags: ["personal resume"]
 
 * 手机： 15917919676
 
-* 邮箱: wqwang0220@gmail.com
+* 邮箱：wqwang0220@gmail.com
 
 * 微信： Arvine2012
 
@@ -20,11 +20,11 @@ tags: ["personal resume"]
 
 * 本科/汕头大学计算机系计算机科学与技术专业/英语四级
 
-* 技术博客： http://wqwang08.com/
+* 技术博客： [http://wqwang08.com/](http://wqwang08.com/)
 
-* GitHub: https://github.com/wangwq08
+* GitHub：[https://github.com/wangwq08](https://github.com/wangwq08)
 
-* Java开发工程师
+* 期望岗位： Java开发工程师
 
 * 期望城市： 北京
 
@@ -100,11 +100,14 @@ tags: ["personal resume"]
 
 # 自我评价
 
-在多个项目中，均有参与技术对接与沟通，有良好的沟通技巧与能力。对前端知识有了解，可以与前端开发很好的进行协同开发。
-对于新技术、新知识有好奇心，喜欢用博客记录学习的过程。愿意尝试不同的系统开发环境如linux系列下的debian/deepin/arch linux
+在多个项目中，均负责技术对接与沟通，有良好的沟通技巧与能力。对前端知识有了解，可以与前端开发很好的进行协同开发。
+
+对于新技术、新知识充满热情，喜欢用博客记录学习的过程。体验过不同的系统开发环境如linux系列下的debian/deepin/arch linux
 
 
 ### **感谢您花时间阅读我的简历，期待能有机会和您共事。**
+
+
 
 
 
