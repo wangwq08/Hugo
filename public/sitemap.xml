@@ -3,7 +3,44 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/java/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/java%E6%B3%9B%E5%9E%8B%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/%E6%B3%9B%E5%9E%8B/</loc>
+    <lastmod>2019-08-16T12:19:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -12,18 +49,6 @@
     <lastmod>2019-08-15T11:41:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-08-15T11:41:29+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -47,18 +72,6 @@
   <url>
     <loc>http://localhost:1313/tags/%E6%A0%88/</loc>
     <lastmod>2019-08-15T11:41:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/java/</loc>
-    <lastmod>2019-08-13T09:07:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2019-08-13T09:07:34+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -75,7 +75,7 @@ String typeError = min(new String[] {"1", "3"}); //报错
 ```
 
 
-> 参考资料，[java 泛型详解](https://blog.csdn.net/s10461/article/details/53941091)、[泛型应用](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98.md)
+参考资料，[java 泛型详解](https://blog.csdn.net/s10461/article/details/53941091)、[泛型应用](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E9%A2%98.md)
 
 
 > 一个人去吃饭逛街，跟自己晚安又失眠。

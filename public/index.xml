@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Java泛型详解及实现</title>
+      <link>http://localhost:1313/post/java%E6%B3%9B%E5%9E%8B%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Fri, 16 Aug 2019 12:19:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java%E6%B3%9B%E5%9E%8B%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/</guid>
+      <description>定义 在学习编程语言的变量时，都会了解一个变量的类型，函数的参数类型，那时候有个想法，参数的类型可以是参数吗？ 那时候，仅仅只是听过泛型这个词，</description>
+    </item>
+    
+    <item>
       <title>Java数组实现栈</title>
       <link>http://localhost:1313/post/java%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E6%A0%88/</link>
       <pubDate>Thu, 15 Aug 2019 11:41:29 +0800</pubDate>
