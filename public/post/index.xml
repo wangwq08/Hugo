@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Aug 2019 12:19:04 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 19:48:24 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode修炼1</title>
+      <link>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC1/</link>
+      <pubDate>Sun, 18 Aug 2019 19:48:24 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC1/</guid>
+      <description>Leetcode 121. 买卖股票的最佳时机 GitHub 给定一个数组，它的第i个元素是一支给定股票第i天的价格 如果你最多只允许完成一笔交易（买入和卖出一支股票），设计一个算</description>
+    </item>
+    
+    <item>
+      <title>数据结构之队列</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 18 Aug 2019 19:25:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%98%9F%E5%88%97/</guid>
+      <description>前言 自从工作后，就很少练习算法，最近准备重新学习算法知识，首先为自己定一个目标，每天一道算法题。 leetcode 牛客网 什么是队列 队列是数据结构的一种重要类</description>
+    </item>
     
     <item>
       <title>Java泛型详解及实现</title>
