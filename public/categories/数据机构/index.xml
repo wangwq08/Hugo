@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据机构 on Jachin - Stay foolish and stay hungry</title>
+    <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E6%9C%BA%E6%9E%84/</link>
+    <description>Recent content in 数据机构 on Jachin - Stay foolish and stay hungry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Aug 2019 18:46:51 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E6%9C%BA%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据结构之集合</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%9B%86%E5%90%88/</link>
+      <pubDate>Mon, 19 Aug 2019 18:46:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%9B%86%E5%90%88/</guid>
+      <description>什么是set Set继承于Collection接口，是一个不允许出现重复元素，无序的集合。主要有HashSet和TreeSet两类。 在判断重复</description>
+    </item>
+    
+  </channel>
+</rss>

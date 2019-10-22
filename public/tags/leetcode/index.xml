@@ -6,10 +6,19 @@
     <description>Recent content in Leetcode on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Aug 2019 19:48:24 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Aug 2019 18:56:53 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode修炼2</title>
+      <link>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC2/</link>
+      <pubDate>Mon, 19 Aug 2019 18:56:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC2/</guid>
+      <description>买卖股票的最佳时机 股票可以买卖多次，但是必须在购买股票的时候，出售之前的股票。 示例1 1 2 3 4 输入：[7, 1, 5, 3, 6, 4] 输出：7 解释：第二天买入 1</description>
+    </item>
     
     <item>
       <title>Leetcode修炼1</title>

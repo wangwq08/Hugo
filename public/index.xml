@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>数据库优化</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Tue, 22 Oct 2019 17:13:03 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96/</guid>
+      <description>关于数据库优化 服务器层面： 配置mysql性能优化参数 数据库结构层面：优化数据表结构、字段类型、字段索引、分表、分库、读写分离等等 数据库层面：</description>
+    </item>
+    
+    <item>
+      <title>Leetcode修炼2</title>
+      <link>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC2/</link>
+      <pubDate>Mon, 19 Aug 2019 18:56:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC2/</guid>
+      <description>买卖股票的最佳时机 股票可以买卖多次，但是必须在购买股票的时候，出售之前的股票。 示例1 1 2 3 4 输入：[7, 1, 5, 3, 6, 4] 输出：7 解释：第二天买入 1</description>
+    </item>
+    
+    <item>
+      <title>数据结构之集合</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%9B%86%E5%90%88/</link>
+      <pubDate>Mon, 19 Aug 2019 18:46:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E9%9B%86%E5%90%88/</guid>
+      <description>什么是set Set继承于Collection接口，是一个不允许出现重复元素，无序的集合。主要有HashSet和TreeSet两类。 在判断重复</description>
+    </item>
+    
+    <item>
       <title>Leetcode修炼1</title>
       <link>http://localhost:1313/post/leetcode%E4%BF%AE%E7%82%BC1/</link>
       <pubDate>Sun, 18 Aug 2019 19:48:24 +0800</pubDate>

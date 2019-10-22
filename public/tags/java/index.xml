@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Jachin - Stay foolish and stay hungry</title>
+    <title>java on Jachin - Stay foolish and stay hungry</title>
     <link>http://localhost:1313/tags/java/</link>
-    <description>Recent content in Java on Jachin - Stay foolish and stay hungry</description>
+    <description>Recent content in java on Jachin - Stay foolish and stay hungry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 16 Aug 2019 12:19:04 +0800</lastBuildDate>
